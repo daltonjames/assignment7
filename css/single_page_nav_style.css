@@ -1,0 +1,139 @@
+/* 
+    Document   : single_page_nav_style.css
+    Created on : Nov 6, 2014, 9:48:28 AM
+    Author     : Dalton James
+    Email      : Dalton_James@student.uml.edu
+    
+    Description: style for the single page site
+*/
+
+
+/*css reset for html5 from Jesse Heines class notes*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd,
+q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt,
+dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot,
+thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark,
+audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu,
+nav, section {
+    display: block;
+}
+body {
+    line-height: 1.2;
+}
+ol {
+    padding-left: 1.4em;
+    list-style: decimal;
+}
+ul {
+    padding-left: 1.4em;
+    list-style: square;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*end css reset*/
+
+/*Effect the entire nav banner*/
+#nav-table {
+    list-style-type: none;
+    padding: 10px;
+    background-color: blue;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+/*effect each cell of the nav table*/
+li.nav-btn {
+    float: left;
+    padding-right: 25px;
+}
+
+/*effect the text on the nav banner*/
+#nav-table li.nav-btn a {
+    display: table-cell;
+    color: black;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/*effects the dynamic content added to the page*/
+#content-wrapper {
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+/*effects the body of the page*/
+body{
+    background-color: lightcyan; 
+    font-family: Helvetica, sans-serif;
+}
+
+/*effects the blockquote, only on the home page*/
+blockquote{
+    margin-top: 7px;
+    margin-left: 10px;
+    font-style: italic;
+}
+
+/*effects all headers*/
+h1{
+    font-size: 22pt;
+    margin-bottom: 7px;
+}
+
+/*changes to the table*/
+table, th, td{
+    border: 3px solid black; /*gives the border to all of the table*/
+    /*seperates the columns and rows      */ 
+}
+
+/*changes to the header cells and standard cells of the table*/
+th, td{
+    padding: 10px; /*keeps the text from hitting the edges*/
+    padding-right: 0px;
+    text-align: left;
+}
+
+/*modify just the assignment table*/
+.assign_table{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/*changes to and the text that relates to them*/
+.image{
+    font-family: fantasy; 
+    text-align: center;
+}
+
+/*changes to parts of the left div, gives a column appearance if the page is big enough*/
+#left{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+/*changes to parts of the right div, gives a column appearance if the page is big enough*/
+#right{
+    float: right;
+}
+
+/*changes to the paragraphs in about.html, used to fix spacing*/
+.para{
+    margin-bottom: 15px;
+}
