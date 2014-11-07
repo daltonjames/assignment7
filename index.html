@@ -1,1 +1,52 @@
-temp
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset='UTF-8'>
+        <!-- 
+        Dalton James, Dalton_James@student.uml.edu   
+        UMass Lowell Computer Science
+        Student in Jesse Heines GUI Programming I
+        
+        File: index.html
+        Created: 7 Nov 2014
+        
+        Home page for Dalton James that can navigate to other pages
+        using a single html page with js displaying page content
+        -->
+
+
+        <title>Single Page Nav</title>
+
+        <link href="css/single_page_nav_style.css" rel="stylesheet" type="text/css">
+
+        <script src="http://code.jquery.com/jquery-2.1.1.js"></script>
+        <script src="single_page_nav.js"></script>
+
+    </head>
+
+    <body>
+        <!--navigation banner for the single page navigation-->
+        <ul id="nav-table">
+            <li class="nav-btn">
+                <a href="#home">Home</a>
+            </li>
+            <li class="nav-btn">
+                <a href="#assignments">Assignments</a>
+            </li>
+            <li class="nav-btn">
+                <a href="#about">About Me</a>
+            </li>
+            <li class="nav-btn">
+                <a href="#contact">Contact Info</a>
+            </li>
+        </ul>
+
+        <!--divs for the dynamic content-->
+        <div id="content-wrapper">
+            <div id="content">
+                <!--Dynamically Filled in -->
+            </div>
+        </div>
+
+    </body>    
+</html>
